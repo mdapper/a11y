@@ -2,13 +2,11 @@
 
 This repo contains information about web accessibility that I learned.
 
-## Types
-
-### Perceivable
+## Perceivable
 
 Web content is made available to the senses - sight, hearing, and/or touch.
 
-#### Guideline 1.1
+### Guideline 1.1
 
 Text Alternatives: Provide text alternatives for any non-text content
 
@@ -39,11 +37,11 @@ _Fixing:_
 - `tabindex="0"` adds the element to the natural tab order
 - `tabindex="5"` jumps to the front of the tab order (Anti-pattern!), the best way is to move it on the DOM
 
-### Operable
+## Operable
 
 Interface forms, controls, and navigation are operable.
 
-#### Focus - (Guideline 2.1)
+### Focus - (Guideline 2.1)
 
 Keyboard Accessible: Make all functionality available from a keyboard
 
@@ -75,7 +73,7 @@ When a use click on something and the pages jump, or go to other route in a SPA,
 - Give an element, maybe a heading, the `tabindex="-1"` and call `focus()` on it
 - You also can disable the focus styles for that element if it is not interactive
 
-#### Main content
+### Main content
 
 Insert some skip links to navigate to the main content or other important stuff.
 
@@ -109,7 +107,7 @@ Styles:
 }
 ```
 
-#### Creating complex components
+### Creating complex components
 
 The ARIA Authoring Practices doc (or "ARIA Design Patterns doc") is a great resource for figuring out what kind of keyboard support your complex components should implement.
 
@@ -135,13 +133,13 @@ When you move to the next element using down arrow, change the first to `tabinde
 
 After the user go to the whole list we move it back to the first.
 
-#### Offscreen Content
+### Offscreen Content
 
-### Understandable
+## Understandable
 
 Information and the operation of user interface must be understandable.
 
-### Robust
+## Robust
 
 Content must be robust enough that it can be interpreted by a wide variety of user agents, including assistive technologies.
 
